@@ -157,26 +157,7 @@ font-weight: bold;
         font-size: 14px;
         padding: 0 10px;
     }
-}
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: aqua;
-  color: rgb(1, 12, 22);
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.btn:hover {
-  background-color: #f13f20;
-}
-h1{
-  text-align: center;
-  font-weight: bold;
-  font-style: italic;
-  color: #a86161;
-}
-@media (max-width: 600px) {
+
 
     .nav {
         flex-direction: column;
@@ -195,4 +176,22 @@ h1{
         flex-direction: column;
         text-align: center;
     }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: aqua;
+  color: rgb(1, 12, 22);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #f13f20;
+}
+h1{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #a86161;
 }
