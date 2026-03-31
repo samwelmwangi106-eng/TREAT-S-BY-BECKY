@@ -176,3 +176,23 @@ h1{
   font-style: italic;
   color: #a86161;
 }
+@media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 90%;
+    }
+
+    .logo-img {
+        width: 90px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
