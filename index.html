@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BECKY TREATS</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Becky Treats | Premium Cakes & Flowers</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-     <nav class="intro">
-        <ul>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact us!</a>
-        </ul>
-    </nav>
-    <h1> TREAT`S BY BECKY </h1>
-    <section class="about">
-<h3>About Treat`s by Becky</h3>
-<p>
-    Treats by Becky is your go-to destination for delicious, freshly baked cakes made with love and creativity. 
-        From birthdays to special celebrations, we craft beautiful and tasty cakes that make every moment memorable. 
-        In addition to our sweet treats, we also offer elegant flowers perfect for gifts and  surprises.
-</p>
+<nav>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <img src="https://i.pinimg.com/1200x/62/83/b3/6283b3dd1cf2651056a9b2235ad638e7.jpg" style="width:45px;height:45px;border-radius:50%;object-fit:cover;">
+    <h2>Becky Treats</h2>
+  </div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#flowers">Flowers</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
+<div class="hero">
+  <div>
+    <h1>Luxury Cakes & Flowers</h1>
+    <p>Made with love for your special moments</p>
+    
+  </div>
+</div>
 
-    <section class="cakes">
-       <h3>Our cakes</h3>
-       <div class="cake-gallery">
-     <img src="images/IMG_20260330_202224_597.png" alt="cakes">
-     <img src="images/IMG_20260330_202240_323.png" alt="cakes">
-     <img src="images/IMG_20260330_202251_757.png" alt="cakes">
-     <img src="images/IMG_20260330_202301_877.png" alt="cakes">
-       </div>
-    </section class="flowers">
-    <h3>
-        Our Flowers
-    </h3>
+<section id="cakes">
+<h2>Our Cakes</h2>
+<div class="grid">
 
-    <div class="flowers-gallery">
-    <img src="images/IMG_20260330_202321_887.png" alt="flowers">
-    <img src="images/12 Count Red Rose Eternal Bouquet + Butterfly Add-ons! (customizable Colors + Add-ons) - Etsy.jpg" alt="flowers">
-    <img src="images/download (1).jpg" alt="flowers">
-    </div>
-    <h4>Conclusion...</h4>
-    <p>
-        At Treats by Becky, we are dedicated to bringing sweetness and joy to every occasion through our delicious cakes and beautiful flowers. 
-        We appreciate your support and look forward to serving you with the best treats and memorable experiences. 
-        Feel free to contact us and place your order today!
-    </p>
-    <section >
+<div class="card fade-in">
+<span class="badge">Popular</span>
+<img src="images/IMG_20260330_202224_597.png">
+<div class="card-content">
+<h3>Chocolate Cake</h3>
+<p>1kg</p>
+<p class="price">Ksh 1500</p>
 
-    </section>
- <a href="contact.html" class="btn">Contact us</a>
+</div>
+</div>
+
+<div class="card fade-in">
+<img src="images/IMG_20260330_202240_323.png">
+<div class="card-content">
+<h3>Vanilla Cake</h3>
+<p>1kg</p>
+<p class="price">Ksh 2000</p>
+
+</div>
+</div>
+
+<div class="card fade-in">
+<img src="images/IMG_20260330_202251_757.png">
+<div class="card-content">
+<h3>Strawberry Cake</h3>
+<p>1kg</p>
+<p class="price">Ksh 1800</p>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="flowers">
+<h2>Flowers</h2>
+<div class="grid">
+
+<div class="card fade-in">
+<img src="images/download (1).jpg" class="flower1">
+<div class="card-content">
+<h3>Rose Bouquet</h3>
+</div>
+</div>
+
+<div class="card fade-in">
+<img src="images/12 Count Red Rose Eternal Bouquet + Butterfly Add-ons! (customizable Colors + Add-ons) - Etsy.jpg">
+<div class="card-content">
+<h3>Luxury Bouquet</h3>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📞 +254 741 917048</p>
+<p>💬 WhatsApp Available</p>
+</section>
+
+<footer>
+<p>© 2026 Becky Treats. All rights reserved.</p>
+</footer>
+
+<script>
+function order(item){
+  alert("Order placed for " + item + " 🎉");
+}
+
+// scroll animation
+const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 50){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
 </body>
 </html>
