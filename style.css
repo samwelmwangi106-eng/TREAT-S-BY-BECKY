@@ -139,3 +139,24 @@ footer{
   opacity:1;
   transform:translateY(0);
 }
+
+/* MOBILE FIX - CLEAN */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+}
