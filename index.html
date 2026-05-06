@@ -1,118 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Becky Treats | Premium Cakes & Flowers</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treats by Becky | Order Cakes & Flowers</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <nav>
+      <a class="brand" href="index.html">
+        <img src="https://i.pinimg.com/1200x/62/83/b3/6283b3dd1cf2651056a9b2235ad638e7.jpg" alt="Treats by Becky logo">
+        <span>Treats by Becky</span>
+      </a>
 
-<nav>
-  <div style="display:flex;align-items:center;gap:10px;">
-    <img src="https://i.pinimg.com/1200x/62/83/b3/6283b3dd1cf2651056a9b2235ad638e7.jpg" style="width:45px;height:45px;border-radius:50%;object-fit:cover;">
-    <h2>Becky Treats</h2>
-  </div>
-  <div>
-    <a href="#">Home</a>
-    <a href="#cakes">Cakes</a>
-    <a href="#flowers">Flowers</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<div class="hero">
-  <div>
-    <h1>Luxury Cakes & Flowers</h1>
-    <p>Made with love for your special moments</p>
-    
-  </div>
-</div>
+      <div class="nav-links">
+        <a href="#cakes">Cakes</a>
+        <a href="#flowers">Flowers</a>
+        <a href="#order">Order Now</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-<section id="cakes">
-<h2>Our Cakes</h2>
-<div class="grid">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-kicker">Nairobi Same-Day Delivery</p>
+        <h1>Order premium cakes and fresh flower bouquets in minutes.</h1>
+        <p class="hero-sub">Perfect for birthdays, surprises, weddings, and all special moments.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#order">Start Your Order</a>
+          <a class="btn btn-light" href="#cakes">Browse Menu</a>
+        </div>
+      </div>
+    </section>
+  </header>
 
-<div class="card fade-in">
-<span class="badge">Popular</span>
-<img src="images/IMG_20260330_202224_597.png">
-<div class="card-content">
-<h3>Chocolate Cake</h3>
-<p>1kg</p>
-<p class="price">Ksh 1500</p>
+  <main>
+    <section id="cakes" class="section">
+      <div class="section-heading">
+        <h2>Best-Selling Cakes</h2>
+        <p>Freshly baked daily and customized to your occasion.</p>
+      </div>
 
-</div>
-</div>
+      <div class="product-grid">
+        <article class="card fade-in">
+          <span class="badge">Popular</span>
+          <img src="images/IMG_20260330_202224_597.png" alt="Chocolate cake">
+          <div class="card-content">
+            <h3>Chocolate Fudge Cake</h3>
+            <p>1kg, rich cocoa layers</p>
+            <div class="card-footer">
+              <p class="price">Ksh 1,500</p>
+              <button class="btn btn-card" data-item="Chocolate Fudge Cake" data-price="1500" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
 
-<div class="card fade-in">
-<img src="images/IMG_20260330_202240_323.png">
-<div class="card-content">
-<h3>Vanilla Cake</h3>
-<p>1kg</p>
-<p class="price">Ksh 2000</p>
+        <article class="card fade-in">
+          <img src="images/IMG_20260330_202240_323.png" alt="Vanilla cake">
+          <div class="card-content">
+            <h3>Vanilla Celebration Cake</h3>
+            <p>1kg, smooth buttercream finish</p>
+            <div class="card-footer">
+              <p class="price">Ksh 2,000</p>
+              <button class="btn btn-card" data-item="Vanilla Celebration Cake" data-price="2000" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
 
-</div>
-</div>
+        <article class="card fade-in">
+          <img src="images/IMG_20260330_202251_757.png" alt="Strawberry cake">
+          <div class="card-content">
+            <h3>Strawberry Bliss Cake</h3>
+            <p>1kg, fresh strawberry filling</p>
+            <div class="card-footer">
+              <p class="price">Ksh 1,800</p>
+              <button class="btn btn-card" data-item="Strawberry Bliss Cake" data-price="1800" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="card fade-in">
-<img src="images/IMG_20260330_202251_757.png">
-<div class="card-content">
-<h3>Strawberry Cake</h3>
-<p>1kg</p>
-<p class="price">Ksh 1800</p>
+    <section id="flowers" class="section section-alt">
+      <div class="section-heading">
+        <h2>Signature Flower Bouquets</h2>
+        <p>Hand-arranged blooms to complete your gift.</p>
+      </div>
 
-</div>
-</div>
+      <div class="product-grid">
+        <article class="card fade-in">
+          <img src="images/download (1).jpg" alt="Rose bouquet">
+          <div class="card-content">
+            <h3>Rose Bouquet</h3>
+            <p>12 stems, wrapped and ribboned</p>
+            <div class="card-footer">
+              <p class="price">Ksh 1,200</p>
+              <button class="btn btn-card" data-item="Rose Bouquet" data-price="1200" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
 
-</div>
-</section>
+        <article class="card fade-in">
+          <img src="images/12 Count Red Rose Eternal Bouquet + Butterfly Add-ons! (customizable Colors + Add-ons) - Etsy.jpg" alt="Luxury bouquet">
+          <div class="card-content">
+            <h3>Luxury Bouquet</h3>
+            <p>Premium mixed flowers, gift-ready</p>
+            <div class="card-footer">
+              <p class="price">Ksh 2,400</p>
+              <button class="btn btn-card" data-item="Luxury Bouquet" data-price="2400" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="flowers">
-<h2>Flowers</h2>
-<div class="grid">
+    <section id="order" class="section">
+      <div class="section-heading">
+        <h2>Place Your Order</h2>
+        <p>Choose your items, add delivery details, and send your order request.</p>
+      </div>
 
-<div class="card fade-in">
-<img src="images/download (1).jpg" class="flower1">
-<div class="card-content">
-<h3>Rose Bouquet</h3>
-</div>
-</div>
+      <div class="order-layout">
+        <aside class="order-summary">
+          <h3>Your Order</h3>
+          <ul id="orderItems">
+            <li>No items selected yet.</li>
+          </ul>
+          <div class="order-total">
+            <span>Total</span>
+            <strong id="orderTotal">Ksh 0</strong>
+          </div>
+        </aside>
 
-<div class="card fade-in">
-<img src="images/12 Count Red Rose Eternal Bouquet + Butterfly Add-ons! (customizable Colors + Add-ons) - Etsy.jpg">
-<div class="card-content">
-<h3>Luxury Bouquet</h3>
-</div>
-</div>
+        <form class="order-form">
+          <label for="customerName">Full Name</label>
+          <input id="customerName" type="text" placeholder="Enter your name" required>
 
-</div>
-</section>
+          <label for="phoneNumber">Phone Number</label>
+          <input id="phoneNumber" type="tel" placeholder="+254..." required>
 
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>📞 +254 741 917048</p>
-<p>💬 WhatsApp Available</p>
-</section>
+          <label for="deliveryDate">Delivery Date</label>
+          <input id="deliveryDate" type="date" required>
 
-<footer>
-<p>© 2026 Becky Treats. All rights reserved.</p>
-</footer>
+          <label for="deliveryAddress">Delivery Address</label>
+          <textarea id="deliveryAddress" rows="3" placeholder="Estate, street, landmark..." required></textarea>
 
-<script>
+          <label for="notes">Order Notes</label>
+          <textarea id="notes" rows="3" placeholder="Cake message, flower color preference, etc."></textarea>
 
-// scroll animation
-const elements = document.querySelectorAll('.fade-in');
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    if(position < window.innerHeight - 50){
-      el.classList.add('show');
+          <button type="submit" class="btn btn-primary">Send Order on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Open daily 8:00 AM - 8:00 PM | Call/WhatsApp: +254 741 917048</p>
+    <p>© 2026 Treats by Becky. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll(".fade-in");
+    const orderItems = document.getElementById("orderItems");
+    const orderTotal = document.getElementById("orderTotal");
+    const orderForm = document.querySelector(".order-form");
+    const addButtons = document.querySelectorAll("[data-item]");
+
+    const navLinks = document.querySelector(".nav-links");
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const whatsappNumber = "254741917048";
+    let items = [];
+
+    function renderOrder() {
+      if (!items.length) {
+        orderItems.innerHTML = "<li>No items selected yet.</li>";
+        orderTotal.textContent = "Ksh 0";
+        return;
+      }
+
+      orderItems.innerHTML = items
+        .map((item, index) => {
+          return (
+            "<li>" +
+            "<div>" +
+            "<strong>" +
+            item.name +
+            "</strong>" +
+            "<span>Ksh " +
+            item.price.toLocaleString() +
+            "</span>" +
+            "</div>" +
+            "<button class='remove-item' type='button' data-index='" +
+            index +
+            "' aria-label='Remove item'>&times;</button>" +
+            "</li>"
+          );
+        })
+        .join("");
+
+      const total = items.reduce((sum, item) => sum + item.price, 0);
+      orderTotal.textContent = "Ksh " + total.toLocaleString();
     }
-  });
-});
-</script>
 
+    // Scroll animation
+    window.addEventListener("scroll", () => {
+      elements.forEach((el) => {
+        const position = el.getBoundingClientRect().top;
+        if (position < window.innerHeight - 50) {
+          el.classList.add("show");
+        }
+      });
+    });
+
+    // Add items
+    addButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        items.push({
+          name: button.dataset.item,
+          price: Number(button.dataset.price),
+        });
+        renderOrder();
+      });
+    });
+
+    // Remove items
+    orderItems.addEventListener("click", (event) => {
+      const target = event.target;
+      if (!target.classList || !target.classList.contains("remove-item")) return;
+
+      const index = Number(target.dataset.index);
+      if (Number.isNaN(index)) return;
+      items.splice(index, 1);
+      renderOrder();
+    });
+
+    // Mobile hamburger menu
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuToggle.classList.toggle("active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuToggle.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    // WhatsApp submit
+    orderForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!items.length) {
+        alert("Please add at least one item to your order.");
+        return;
+      }
+
+      const customerName = document.getElementById("customerName").value.trim();
+      const phoneNumber = document.getElementById("phoneNumber").value.trim();
+      const deliveryDate = document.getElementById("deliveryDate").value;
+      const deliveryAddress = document.getElementById("deliveryAddress").value.trim();
+      const notes = document.getElementById("notes").value.trim() || "None";
+
+      const total = items.reduce((sum, item) => sum + item.price, 0);
+      const orderLines = items.map((item) => "- " + item.name + " (Ksh " + item.price.toLocaleString() + ")");
+
+      const message = [
+        "Hello Treats by Becky, I would like to place an order:",
+        "",
+        "Name: " + customerName,
+        "Phone: " + phoneNumber,
+        "Delivery Date: " + deliveryDate,
+        "Delivery Address: " + deliveryAddress,
+        "",
+        "Items:",
+        orderLines.join("\n"),
+        "",
+        "Total: Ksh " + total.toLocaleString(),
+        "Notes: " + notes,
+      ].join("\n");
+
+      const whatsappLink = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+      window.open(whatsappLink, "_blank");
+
+      orderForm.reset();
+      items = [];
+      renderOrder();
+    });
+  </script>
 </body>
 </html>
